@@ -1,0 +1,8 @@
+{
+    "cSpell.ignoreWords": [
+        "networkidle",
+        "stealthplugin"
+    ],
+    "prettier.printWidth": 1000, // or any large number
+    "prettier.proseWrap": "never"
+}

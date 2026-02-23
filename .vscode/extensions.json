@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "yzhang.markdown-all-in-one",
+        "ms-vscode-remote.remote-wsl",
+        "shakram02.bash-beautify",
+        "rogalmic.bash-debug",
+        "streetsidesoftware.code-spell-checker",
+        "pkief.material-icon-theme",
+        "esbenp.prettier-vscode",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "yzane.markdown-pdf",
+        "mkhl.shfmt"
+    ]
+}

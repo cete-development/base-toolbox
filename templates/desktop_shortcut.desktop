@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=placeholder_appname
+Comment=placeholder_description
+Exec=home/$USER/.local/bin/test.sh
+Icon=utilities-terminal
+Terminal=true
+Type=Application
+Categories=Utility;
