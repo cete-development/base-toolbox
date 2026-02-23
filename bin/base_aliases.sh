@@ -2,8 +2,6 @@
 alias cls='clear'
 alias h='history'
 alias open='start'
-#alias cat='batcat --paging never'
-#alias less='batcat'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -31,7 +29,6 @@ alias gs='git status'
 alias sr="reboot now"
 
 ## System stuff
-alias ff="fastfetch"
 alias lsys='systemctl list-units --type=service'
 alias lupdate='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y'
 alias lbin="ls -avhgF /home/$USER/.local/bin"

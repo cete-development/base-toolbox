@@ -30,6 +30,17 @@ if command -v eza >/dev/null 2>&1; then
 	alias lt="eza -al --git --git-repos -o --header --hyperlink --icons --time-style '+%d-%m-%Y %H:%M' -T"
 fi
 
+# Batcat replacement of cat
+if command -v batcat >/dev/null 2>&1; then
+	alias cat='batcat --paging never'
+	alias less='batcat'
+fi
+
+# Fastfetch
+if command -v fastfetch >/dev/null 2>&1; then
+	alias ff="fastfetch"
+fi
+
 # Lesspipe
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
