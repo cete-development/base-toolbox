@@ -18,7 +18,7 @@ packages=(
 
 	# System Tools
 	hw-probe # Hardware probe tool - look for missing drivers
-	unattended-upgrade	# auto apt package updater/upgrader
+	unattended-upgrades	# auto apt package updater/upgrader
 
 	# File Management & Utilities
 	speedtest-cli # Speedtest CLI tool
