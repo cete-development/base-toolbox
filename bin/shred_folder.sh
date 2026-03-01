@@ -39,7 +39,7 @@ securely_shred_folder() {
     echo -e "${YEL}Shredding folder contents in: ${target_dir}${NC}"
 
     # Shred regular files (excluding symlinks)
-    find "$target_dir" -type f ! -lname '*' -exec shred -u {} \; 2>/dev/null
+    find "$target_dir" -type f ! -lname '*' -exec shred -uv {} \; 2>/dev/null
 
     # Final safety check
     if [[ -d "$target_dir" ]]; then

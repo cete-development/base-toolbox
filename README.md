@@ -12,6 +12,9 @@ bash ~/base-toolbox/installation/install_configs.bash
 ### Setup base apt packages
 . ~/base-toolbox/installation/install_base_apt.sh
 
+### Setup unattended updated of apt packages
+bash ~/base-toolbox/installation/install_unattended.bash
+
 ### Setup hblock
 . ~/base-toolbox/installation/install_hblock.sh
 

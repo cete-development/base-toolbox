@@ -14,23 +14,24 @@ trap 'echo -e "${RED}[ERROR] Script failed at line $LINENO.${NC}" >&2' ERR
 # Define packages
 packages=(
 	# Network
-	nmap			# Network scan tool
+	nmap # Network scan tool
 
 	# System Tools
-	hw-probe 		# Hardware probe tool - look for missing drivers
+	hw-probe # Hardware probe tool - look for missing drivers
+	unattended-upgrade	# auto apt package updater/upgrader
 
 	# File Management & Utilities
-	speedtest-cli 	# Speedtest CLI tool
-	curl          	# Transfer data with URLs
-	bat           	# Cat command with syntax highlighting
-	btop          	# Resource monitor
+	speedtest-cli # Speedtest CLI tool
+	curl          # Transfer data with URLs
+	bat           # Cat command with syntax highlighting
+	btop          # Resource monitor
 
 	# Rest
-	gpg      		# encryption software
-	tealdeer 		# short and easy manpages alt
-	fzf      		# fuzzy finder, used in gl function
-	tmux     		# terminal spitter
-	eza				# ls replacement
+	gpg      # encryption software
+	tealdeer # short and easy manpages alt
+	fzf      # fuzzy finder, used in gl function
+	tmux     # terminal spitter
+	eza      # ls replacement
 )
 
 echo -e "${YELLOW}Installing packages: ${packages[*]}${NC}"
