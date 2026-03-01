@@ -17,6 +17,7 @@ packages=(
 	nmap # Network scan tool
 
 	# System Tools
+	make # Compiler, needed for hblock 
 	hw-probe # Hardware probe tool - look for missing drivers
 	unattended-upgrades	# auto apt package updater/upgrader
 
