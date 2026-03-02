@@ -35,10 +35,10 @@ lextract() {
 	esac
 }
 
-lmksshkey() {
+lkeymake() {
 	local name="$1"
 	[ -z "$name" ] && {
-		echo "Usage: lmksshkey <name>"
+		echo "Usage: lkeymake <name>"
 		return 1
 	}
 
