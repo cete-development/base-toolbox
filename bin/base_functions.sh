@@ -35,7 +35,7 @@ lextract() {
 	esac
 }
 
-lkeymake() {
+lkey_make() {
 	local name="$1"
 	[ -z "$name" ] && {
 		echo "Usage: lkeymake <name>"

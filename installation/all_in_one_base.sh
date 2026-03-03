@@ -20,7 +20,7 @@ show_help() {
 Usage: $(basename "$0") [OPTIONS]
 
 Functionality:
-    This_is_placeholdertext_for_the_script_functionality.
+    Script to install all basic necessities for any system.
     
 Options:
   -h, --help     Show this help message and exit
@@ -79,7 +79,6 @@ check_folder() { [[ -d "$1" ]] && echo "${GREEN}Folder exists ${RESET}" || {
 }; }
 
 # =========================  USER-FUNCTIONS  =========================
-testflag_function() { echo "${CYAN} test flaggggg ${RESET}"; }
 
 process_files() {
 	local file_matrix=("$@") # take all arguments
@@ -118,14 +117,14 @@ while [[ $# -gt 0 ]]; do
 		show_help
 		exit 0
 		;;
-	-t | --test)
-		testflag_function
-		shift
-		;;
-	-u | --user-input)
-		USER_INPUT="$2"
-		shift 2 # <-- pay attention, shift twice
-		;;
+	# -t | --test)
+	# 	testflag_function
+	# 	shift
+	# 	;;
+	# -u | --user-input)
+	# 	USER_INPUT="$2"
+	# 	shift 2 # <-- pay attention, shift twice
+	# 	;;
 	*)
 		echo "${RED}Unknown option: $1${RESET}" >&2
 		show_help
