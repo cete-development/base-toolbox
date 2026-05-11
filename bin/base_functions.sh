@@ -140,3 +140,12 @@ function lcopy() {
 		return 1
 	fi
 }
+
+function lmac() {
+	local MAC=$1
+	if [[ -z "$MAC" ]]; then
+		echo "Usage: lmac <MAC adress>"
+		return 1
+	fi
+	curl -X GET "https://macverify.com/api/v1/lookup?mac=$MAC"
+}
